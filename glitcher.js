@@ -23,7 +23,7 @@ const glitchImage = (imageUrl) => {
 }
 
 const generate = () => {
-    schedule.scheduleJob('*/8 * * * *', () => {
+    schedule.scheduleJob('*/29 * * * *', () => {
         glitchImage(process.env.IMAGE_URL)
     })
 } 
