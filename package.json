@@ -1,0 +1,24 @@
+{
+  "name": "michaelv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "curl": "^0.1.4",
+    "curlrequest": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "image-to-base64": "^2.1.1",
+    "node-schedule": "^2.0.0",
+    "randexp": "^0.5.3",
+    "replace-string": "^3.1.0",
+    "stream": "^0.0.2",
+    "urlencode": "^1.1.0"
+  }
+}
