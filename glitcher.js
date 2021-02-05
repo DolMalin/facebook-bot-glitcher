@@ -18,12 +18,12 @@ const glitchImage = (imageUrl) => {
             let streamObj = new ReadableData()
             streamObj.push(imageBuffer)
             streamObj.push(null)
-            streamObj.pipe(fs.createWriteStream(__dirname + `/img/micheal.jpg`))
+            streamObj.pipe(fs.createWriteStream(`${process.env.IMAGE_REPO}/img/micheal.jpg`))
         })
 }
 
 const generate = () => {
-    schedule.scheduleJob('*/1 * * * * *', () => {
+    schedule.scheduleJob('1 * * * * *', () => {
         glitchImage(process.env.IMAGE_URL)
     })
 } 
