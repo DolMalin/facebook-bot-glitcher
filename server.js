@@ -12,7 +12,7 @@ var optionImg = {
 }
 
 const sendPost = () => {
-    schedule.scheduleJob('* * 1 * * *', () => {
+    schedule.scheduleJob('* */19 * * * *', () => {
         let photo = urlencode(process.env.GLITCHED_IMAGE_URL)
         let optionImg = {
             url: `https://graph.facebook.com/${process.env.PAGE_ID}/photos?url=${photo}&access_token=${process.env.FACEBOOK_TOKEN}`,
